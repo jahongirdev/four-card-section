@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.top {
+  margin: 50px 0px;
+}
+.top h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 35px;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.top p {
+  text-align: center;
+  width: 550px;
+  color: hsl(229, 6%, 66%);
+}
+.bottom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.child .item,
+.child2 .item {
+  width: 400px;
+  height: 300px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px -11px rgba(0, 0, 0, 0.41);
+  cursor: pointer;
+}
+.child .item1 {
+  border-top: 7px solid hsl(180, 62%, 55%);
+}
+.child .item1:hover,
+.child .item1:focus,
+.child .item1:active {
+  border: 7px solid hsl(180, 62%, 55%);
+}
+.child2 .item2 {
+  border-top: 7px solid hsl(0, 78%, 62%);
+}
+.child2 .item2:hover,
+.child2 .item2:focus,
+.child2 .item2:active {
+  border: 7px solid hsl(0, 78%, 62%);
+}
+.child2 .item3 {
+  border-top: 7px solid hsl(34, 97%, 64%);
+}
+.child2 .item3:hover,
+.child2 .item3:focus,
+.child2 .item3:active {
+  border: 7px solid hsl(34, 97%, 64%);
+}
+.child .item4 {
+  border-top: 7px solid hsl(212, 86%, 64%);
+}
+.child .item4:hover,
+.child .item4:focus,
+.child .item4:active {
+  border: 7px solid hsl(212, 86%, 64%);
+}
+.child .item img,
+.child2 .item img {
+  float: right;
+  margin-top: 60px;
+}
+.child2 .item:first-child {
+  margin-bottom: 30px;
+}
+.child .item h3,
+.child2 .item h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.child .item p,
+.child2 .item p {
+  color: hsl(229, 6%, 66%);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .top h2 {
+    font-size: 30px;
+  }
+  .top p {
+    width: auto;
+    padding: 0px 30px;
+  }
+}
